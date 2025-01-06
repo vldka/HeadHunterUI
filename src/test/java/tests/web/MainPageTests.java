@@ -34,7 +34,7 @@ public class MainPageTests extends UiTestBase {
     }
 
     @Test
-    @DisplayName("Проверка регистрации при поиске на главной странице")
+    @DisplayName("Проверка Блока Вакансии")
     void successfulCheckBlockTest() {
         MainPage
                 .openPage()
@@ -42,7 +42,7 @@ public class MainPageTests extends UiTestBase {
     }
 
     @Test
-    @DisplayName("Переход на Главную страницу через страницу Поиска")
+    @DisplayName("Переход на главную страницу из страницы поиска")
     void successfulSearchTest() {
         MainPage
                 .openPageSearch()
@@ -51,7 +51,7 @@ public class MainPageTests extends UiTestBase {
     }
 
     @Test
-    @DisplayName("Проверка капчи")
+    @DisplayName("Проверка капчи при вводе номера телефона с главной страницы")
     void successfulCheckPhoneSetTest() {
         MainPage.openPage();
         Selenide.sleep(60000);
