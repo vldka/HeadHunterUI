@@ -53,10 +53,11 @@ public class MainPageTests extends UiTestBase {
     @Test
     @DisplayName("Проверка капчи")
     void successfulCheckPhoneSetTest() {
-        MainPage
-                .openPage()
-                .setPhone(phone);
+        MainPage.openPage();
         Selenide.sleep(60000);
-        MainPage.checkCapcha();
+
+        MainPage
+                .setPhone(phone)
+                .checkCapcha();
     }
 }
