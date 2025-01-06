@@ -53,25 +53,26 @@
 
 ### <div align="center">Задача в [Jenkins](https://jenkins.autotests.cloud/job/HeadHunterUI/)</div>
 <div align="center">
-    <img src="images/jenkins.jpg" alt="Jenkins Job">
+    <img src="images/jenkins.png" alt="Jenkins Job">
 </div>
 
 ---
 
 ### <div align="center">Отчет о прохождении тестов в [Allure Report](https://jenkins.autotests.cloud/job/HeadHunterUI/3/allure/)</div>
 <div align="center">
-    <img src="images/alure_report.jpg" alt="Allure Report">
+    <img src="images/alure_report.png" alt="Allure Report">
 </div>
 
 ---
 ### <div align="center">Telegram Report [Telegram](https://t.me/+_v6PwxfZV9czODli)</div>
 
 <div align="center">
-    <img src="images/telegram_alert.jpg" alt="Telegram Report">
+    <img src="images/telegram_alert.png" alt="Telegram Report">
 </div>
 
 ---
 
 ### <div align="center">Запись прохождения тестов</div>
-[![Watch the video](https://www.intermedia-solutions.net/wp-content/uploads/2021/06/video-thumbnail-01.jpg)](https://jenkins.autotests.cloud/job/HeadHunterUI/3/allure/data/attachments/42618f56bc81af0c.html)
-
+<div align="center">
+    <img src="images/video/emailRegistration.gif" alt="Video Test">
+</div>
