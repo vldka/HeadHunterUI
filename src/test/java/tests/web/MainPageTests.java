@@ -17,6 +17,16 @@ public class MainPageTests extends UiTestBase {
     MainPage MainPage = new MainPage();
 
     @Test
+    @DisplayName("Проверка капчи")
+    void successfulCheckPhoneSetTest() {
+        MainPage
+                .openPage()
+                .setPhone(phone);
+                Selenide.sleep(60000);
+        MainPage.checkCapcha();
+    }
+
+    @Test
     @DisplayName("Проверка открытия Главной страницы")
     void successfulOpenTest() {
         MainPage
@@ -39,15 +49,6 @@ public class MainPageTests extends UiTestBase {
         MainPage
                 .openPage()
                 .checkBlockVakancy();
-    }
-
-    @Test
-    @DisplayName("Проверка капчи")
-    void successfulCheckPhoneSetTest() {
-        MainPage
-                .openPage()
-                .setPhone(phone)
-                .checkCapcha();
     }
 
     @Test
