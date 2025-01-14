@@ -54,8 +54,6 @@ public class MainPageTests extends UiTestBase {
     @DisplayName("Проверка капчи при вводе номера телефона с главной страницы")
     void successfulCheckPhoneSetTest() {
         mainPage.openPage();
-        Selenide.sleep(60000);
-
         mainPage.setPhone(faker.phone);
         captchaPage.checkCapcha();
     }
