@@ -29,14 +29,14 @@ public class MainPage {
         $(xpath("//button[@class='bloko-button bloko-button_kind-primary bloko-button_stretched']"))
                 .scrollTo().click();
     }
-
+    @Step("Нажать на кнопку поиска")
     public MainPage clickButton() {
 
         $(".magritte-button__label___zplmt_5-2-9").scrollTo().click();
 
         return this;
     }
-
+    @Step("Нажать на Логотип")
     public MainPage clickButtonMainPage() {
 
         $("span.supernova-logo.supernova-logo_inversed.supernova-logo_hh-ru").shouldBe(visible);
