@@ -14,7 +14,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import java.util.Map;
 
 public class UiTestBase {
-    private static RemoteConfig remoteConfig = ConfigFactory.create(RemoteConfig.class, System.getProperties());
+    public static RemoteConfig remoteConfig = ConfigFactory.create(RemoteConfig.class, System.getProperties());
 
     @BeforeAll
     static void beforeAll() {

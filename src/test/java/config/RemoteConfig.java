@@ -1,5 +1,6 @@
 package config;
 
+import net.bytebuddy.implementation.bind.annotation.Default;
 import org.aeonbits.owner.Config;
 
 @Config.Sources({
@@ -23,4 +24,8 @@ public interface RemoteConfig extends Config {
 
     @Key("remoteURL")
     String getRemoteUrl();
+
+    @Key("remoteVideoURL")
+    @DefaultValue("https://selenoid.autotests.cloud/video/")
+    String getRemoteVideoURL();
 }

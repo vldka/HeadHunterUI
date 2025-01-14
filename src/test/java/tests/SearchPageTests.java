@@ -26,7 +26,7 @@ public class SearchPageTests extends UiTestBase {
     @DisplayName("Проверка подсказки при поиске")
     void checkOperationFilterTest() {
         searchPage.openPageSearch();
-        mainPage.setSearch(faker.position);
+        mainPage.setSearch("Менеджер");
         searchPage.checkhelpSearchList();
     }
 }
