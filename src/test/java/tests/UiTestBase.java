@@ -36,10 +36,8 @@ public class UiTestBase {
     @AfterEach
     void afterEach() {
         Attach.screenshotAs("Last screenshot");
-        if (!Configuration.browser.equals("firefox")) {
-            Attach.pageSource();
-            Attach.browserConsoleLogs();
-        }
+        Attach.pageSource();
+        Attach.browserConsoleLogs();
         Attach.addVideo();
         Selenide.closeWebDriver();
     }
