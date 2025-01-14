@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import pages.MainPage;
 import pages.SearchPage;
 
-@DisplayName("Проверки на Главной форме")
+@DisplayName("Проверки Поисковой страницы")
 public class SearchPageTests extends UiTestBase {
     FakerData faker = new FakerData();
 
