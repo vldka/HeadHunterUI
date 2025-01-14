@@ -1,21 +1,26 @@
 # <div align="center">[HeadHunter <img src="https://play-lh.googleusercontent.com/FMoQp38r6CDxqD-Iu90cu0HZ-OAMLTztkl1iSWHE-su82MmgFzGZHYGbLJwHBNKiO1g=w240-h480-rw" height="26" width="26">](https://hh.ru/)</div>
 
-
-> hh.ru — сервис, который помогает найти работу и подобрать персонал в Санкт-Петербурге более 20 лет! Создавайте резюме и откликайтесь на вакансии.
+> hh.ru — сервис, который помогает найти работу и подобрать персонал в Санкт-Петербурге более 20 лет! Создавайте резюме
+> и откликайтесь на вакансии.
 
 ---
 
 ## <div align="center">Содержание</div>
 
-- [Проект](#Проект)
-- [Jenkins](#Jenkins)
-- [Allure Report](#Allure-Report)
-- [Telegram Report](#Telegram-Report)
-- [Видео о прохождении тестов](#Видео-о-прохождении-тестов)
+* <a href="#project">Проект</a>
+* <a href="#tools">Инструменты</a>
+* <a href="#cases">Тестовое покрытие</a>
+* <a href="#launch">Запуск</a>
+* <a href="#allure">Интеграция с Allure</a>
+* <a href="#allureTestOps">Интеграция с Allure TestOps</a>
+* <a href="#telegramBot">Бот в Telegram</a>
+* <a href="#video">Видео прохождения тестов</a>
 
 ---
+<a id="project"></a>
 
-### <div align="center">Проект</div>
+## <a name="Проект">**Проект**</a>
+
 > Целью проекта является задание на основе курса [QA GURU](https://qa.guru/)
 
 - Написать автотесты
@@ -24,55 +29,91 @@
 - Вывести отчет в Allure
 - Получить уведомление о прохождении тестов в Telegram Bot
 
+<a id="tools"></a>
 
-#### Инструменты:
+## <a name="Инструменты">**Инструменты**</a>
 
-<a href="https://github.com/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" height="40" width="40">
-<a href="https://www.oracle.com/java/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" height="40" width="40">
-</a>
-<a href="https://www.jetbrains.com/ru-ru/idea/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/intellij/intellij-original.svg" height="40" width="40">
-</a>
-<a href="https://gradle.org/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gradle/gradle-original.svg" height="40" width="40">
-</a>
-<a href="https://selenide.org/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/selenium/selenium-original.svg" height="40" width="50">
-</a>
-<a href="https://junit.org/junit5/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/junit/junit-original.svg" height="40" width="40">
-</a>
-<a href="https://www.jenkins.io/"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg" height="40" width="40">
-</a>
-<a href="https://web.telegram.org/"><img src="https://static.cdnlogo.com/logos/t/57/telegram-2019.svg" height="40" width="40">
-</a>
+
+<p align="center">
+<a href="https://www.jetbrains.com/idea/"><img alt="InteliJ IDEA" height="50" src="images/icons/intellij-original.svg" width="50"/></a>
+<a href="https://www.jenkins.io/"><img alt="Jenkins" height="50" src="images/icons/jenkins-original.svg" width="50"/></a>
+<a href="https://github.com/"><img alt="GitHub" height="50" src="images/icons/github-original.svg" width="50"/></a>  
+<a href="https://www.java.com/"><img alt="Java" height="50" src="images/icons/java-original.svg" width="50"/></a>
+<a href="https://gradle.org/"><img alt="Gradle" height="50" src="images/icons/gradle-original.svg" width="50"/></a>  
+<a href="https://junit.org/junit5/"><img alt="JUnit 5" height="50" src="images/icons/junit-original.svg" width="50"/></a>
+<a href="https://selenide.org/"><img alt="Selenide" height="50" src="images/icons/selenide-logo-big.png" width="50"/></a>
+<a href="https://github.com/allure-framework/"><img alt="Allure Report" height="50" src="images/icons/allureReports.png" width="50"/></a> 
+<a href="https://telegram.org/"><img alt="Telegram" height="50" src="images/icons/telegram.webp" width="50"/></a>
+<a href="https://aerokube.com/selenoid/"><img alt="Telegram" height="50" src="images/icons/Selenoid.svg" width="50"/></a>
+</p>
+
 ---
-### <div align="center">Описание тестов</div>
-1. Проверка Открытия главнной странницы
-2. Проверка регистрации при поиске на Главной странице
-3. Проверка Блока Вакансии
-4. Переход на главную страницу из страницы поиска
-5. Проверка капчи при вводе номера телефона с главной страницы
----
+<a id="cases"></a>
 
-### <div align="center">Задача в [Jenkins](https://jenkins.autotests.cloud/job/HeadHunterUI/)</div>
+## <a name="Тестовое покрытие">**Тестовое покрытие**</a>
+
+### Страница поиска
+
+✅ Проверка вхождения хотя бы 1 записи в выдаче по поиску <br>
+✅ Проверка подсказки при поиске
+
+### Главная страница
+
+✅ Проверка открытия Главной страницы <br>
+✅ Проверка регистрации при поиске на главной странице <br>
+✅ Проверка Блока Вакансии из топ 12 <br>
+✅ Переход на главную страницу из страницы поиска<br>
+✅ Проверка капчи при вводе номера телефона с главной страницы<br>
+---
+<a id="launch"></a>
+
+## <a name="Запуск">**Запуск**</a>
+
+Для запуска локально в терминале нужно прописать:
+> ./gradlew clean test
+
+Так же тесты можно запустить через [Jenkins](https://jenkins.autotests.cloud/job/HeadHunterUI/)
+
+В качестве параметров можно выбрать:
+```  
+- Разрешение экрана
+- Версию браузера
+```
+
+---
+<a id="allure"></a>
+
+## <a name="Интеграция с Allure">**Интеграция с Allure**</a>
+
+### <div align="center">Отчет о прохождении тестов в [Allure Report](https://jenkins.autotests.cloud/job/HeadHunterUI/10/allure/)</div>
+
 <div align="center">
-    <img src="images/jenkins.png" alt="Jenkins Job">
+    <img src="images/alure_report.png" alt="AllureReport">
 </div>
 
 ---
 
-### <div align="center">Отчет о прохождении тестов в [Allure Report](https://jenkins.autotests.cloud/job/HeadHunterUI/3/allure/)</div>
+<a id="allureTestOps"></a>
+
+## <a name="Интеграция с Allure TestOps">**Интеграция с Allure TestOps**</a>
+
+Есть интеграция с [Allure TestOps](https://allure.autotests.cloud/launch/43766)
+
+<img src="images/TestOps.png" width="900">
+
+---
+<a id="telegramBot"></a>
+
+## <a name="Бот в Telegram">**Бот в Telegram**</a>
 <div align="center">
-    <img src="images/alure_report.png" alt="Allure Report">
+    <img src="images/telegram_alert.png" alt="TelegramReport">
 </div>
 
 ---
-### <div align="center">Telegram Report [Telegram](https://t.me/+_v6PwxfZV9czODli)</div>
+
+<a id="video"></a>
+## <a name="Видео прохождения тестов">**Видео прохождения тестов**</a>
 
 <div align="center">
-    <img src="images/telegram_alert.png" alt="Telegram Report">
-</div>
-
----
-
-### <div align="center">Запись прохождения тестов</div>
-<div align="center">
-    <img src="images/video/emailRegistration.gif" alt="Video Test">
+    <img src="images/video/emailRegistration.gif" alt="VideoTest">
 </div>
