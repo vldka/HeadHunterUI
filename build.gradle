@@ -27,7 +27,8 @@ dependencies {
             "com.codeborne:selenide:7.4.2",
             "org.junit.jupiter:junit-jupiter:5.10.3",
             "com.github.javafaker:javafaker:1.0.2",
-            'io.qameta.allure:allure-selenide:2.19.0'
+            'io.qameta.allure:allure-selenide:2.19.0',
+            "org.aeonbits.owner:owner:1.0.12"
     )
     testRuntimeOnly('org.junit.jupiter:junit-jupiter-engine:5.9.0')
 }
@@ -40,11 +41,5 @@ tasks.withType(Test) {
             events "started", "skipped", "failed", "standard_error", "standard_out"
             exceptionFormat "short"
         }
-    }
-}
-
-task main_test(type: Test) {
-    useJUnitPlatform {
-        includeTags("main")
     }
 }

@@ -1,25 +1,24 @@
-package tests.web;
+package tests;
 
 import com.codeborne.selenide.Selenide;
-import com.github.javafaker.Faker;
+import helpers.faker.FakerData;
 import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import pages.CaptchaPage;
 import pages.MainPage;
-
-import java.util.Locale;
+import pages.SearchPage;
 
 @DisplayName("Проверки на Главной форме")
-@Tag("main")
 public class MainPageTests extends UiTestBase {
-    Faker rufaker = new Faker(new Locale("ru"));
-    String phone = rufaker.phoneNumber().subscriberNumber(10);
-    MainPage MainPage = new MainPage();
+    FakerData faker = new FakerData();
+    MainPage mainPage = new MainPage();
+    CaptchaPage captchaPage = new CaptchaPage();
+    SearchPage searchPage = new SearchPage();
 
     @Test
     @DisplayName("Проверка открытия Главной страницы")
     void successfulOpenTest() {
-        MainPage
+        mainPage
                 .openPage()
                 .checkMainPage();
     }
@@ -27,25 +26,26 @@ public class MainPageTests extends UiTestBase {
     @Test
     @DisplayName("Проверка регистрации при поиске на главной странице")
     void successfulSearchRegistrationTest() {
-        MainPage
+        mainPage
                 .openPage()
                 .clickButton()
                 .checkMainFirstSearch();
     }
 
     @Test
-    @DisplayName("Проверка Блока Вакансии")
+    @DisplayName("Проверка Блока Вакансии из топ 12")
     void successfulCheckBlockTest() {
-        MainPage
+        String position = "Менеджер";
+        mainPage
                 .openPage()
-                .checkBlockVakancy();
+                .checkBlock(position);
     }
 
     @Test
     @DisplayName("Переход на главную страницу из страницы поиска")
     void successfulSearchTest() {
-        MainPage
-                .openPageSearch()
+        searchPage.openPageSearch();
+        mainPage
                 .clickButtonMainPage()
                 .checkMainPage();
     }
@@ -53,11 +53,10 @@ public class MainPageTests extends UiTestBase {
     @Test
     @DisplayName("Проверка капчи при вводе номера телефона с главной страницы")
     void successfulCheckPhoneSetTest() {
-        MainPage.openPage();
+        mainPage.openPage();
         Selenide.sleep(60000);
 
-        MainPage
-                .setPhone(phone)
-                .checkCapcha();
+        mainPage.setPhone(faker.phone);
+        captchaPage.checkCapcha();
     }
 }
