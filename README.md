@@ -98,7 +98,7 @@
 
 ## <a name="Интеграция с Allure TestOps">**Интеграция с Allure TestOps**</a>
 
-Есть интеграция с [Allure TestOps](https://allure.autotests.cloud/launch/43766)
+Есть интеграция с [Allure TestOps](https://allure.autotests.cloud/launch/44016/tree?treeId=8912)
 
 <img src="images/TestOps.png" width="900">
 
