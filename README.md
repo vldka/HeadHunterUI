@@ -33,7 +33,6 @@
 
 ## <a name="Инструменты">**Инструменты**</a>
 
-
 <p align="center">
 <a href="https://www.jetbrains.com/idea/"><img alt="InteliJ IDEA" height="50" src="images/icons/intellij-original.svg" width="50"/></a>
 <a href="https://www.jenkins.io/"><img alt="Jenkins" height="50" src="images/icons/jenkins-original.svg" width="50"/></a>
@@ -65,6 +64,7 @@
 ✅ Переход на главную страницу из страницы поиска<br>
 ✅ Проверка капчи при вводе номера телефона с главной страницы<br>
 ---
+
 <a id="launch"></a>
 
 ## <a name="Запуск">**Запуск**</a>
@@ -75,6 +75,7 @@
 Так же тесты можно запустить через [Jenkins](https://jenkins.autotests.cloud/job/HeadHunterUI/)
 
 В качестве параметров можно выбрать:
+
 ```  
 - Разрешение экрана
 - Версию браузера
@@ -105,6 +106,7 @@
 <a id="telegramBot"></a>
 
 ## <a name="Бот в Telegram">**Бот в Telegram**</a>
+
 <div align="center">
     <img src="images/telegram_alert.png" alt="TelegramReport">
 </div>
@@ -112,6 +114,7 @@
 ---
 
 <a id="video"></a>
+
 ## <a name="Видео прохождения тестов">**Видео прохождения тестов**</a>
 
 <div align="center">
