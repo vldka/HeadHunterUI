@@ -1,4 +1,4 @@
-# <div align="center">[HeadHunter <img src="https://play-lh.googleusercontent.com/FMoQp38r6CDxqD-Iu90cu0HZ-OAMLTztkl1iSWHE-su82MmgFzGZHYGbLJwHBNKiO1g=w240-h480-rw" height="26" width="26">](https://hh.ru/)</div>
+# <div align="center">[HeadHunter <img src="https://samara.mgsu.ru/upload/iblock/5d6/5d6ac517626e2f00be3f26856b885ede.png" height="30" width="40">](https://hh.ru/)</div>
 
 > hh.ru — сервис, который помогает найти работу и подобрать персонал в Санкт-Петербурге более 20 лет! Создавайте резюме
 > и откликайтесь на вакансии.
