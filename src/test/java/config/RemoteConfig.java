@@ -1,6 +1,5 @@
 package config;
 
-import net.bytebuddy.implementation.bind.annotation.Default;
 import org.aeonbits.owner.Config;
 
 @Config.Sources({

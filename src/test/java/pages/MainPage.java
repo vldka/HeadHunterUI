@@ -18,7 +18,7 @@ public class MainPage {
         return this;
     }
 
-    @Step("Заполненение поиска")
+    @Step("Заполнение поиска")
     public void setSearch(String value) {
         $("#supernova_search_form").$("#a11y-search-input").setValue(value);
     }
