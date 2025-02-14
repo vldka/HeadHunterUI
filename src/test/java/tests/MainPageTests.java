@@ -47,7 +47,7 @@ public class MainPageTests extends UiTestBase {
     @AllureId("35741")
     @DisplayName("Проверка Блока Вакансии из топ 12")
     void successfulCheckBlockTest() {
-        String position = "Свояк";
+        String position = "Тест";
         mainPage
                 .openPage()
                 .checkBlock(position);
